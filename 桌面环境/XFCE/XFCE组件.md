@@ -16,4 +16,31 @@ Xfce 是一个提供全功能桌面环境的程序集。
 Xfce 还是一个提供若干库文件，帮助程序员创建适合桌面环境的应用程序之开发平台。
 Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点(https://www.xfce.org) 以获取详情。
 
+---
+# xfce4-panel
+## xfce4-panel - Applications Menu
+xfce4面板 - 应用程序菜单
+The Applications Menu panel plugin adds a menu to the panel that allows easy access to all installed applications, organised into categories.
+应用程序菜单面板插件向面板添加一个菜单，允许轻松访问所有已安装的应用程序，按类别组织。
+
+Link
+- 官网文档：[https://docs.xfce.org/xfce/xfce4-panel/applicationsmenu](https://docs.xfce.org/xfce/xfce4-panel/applicationsmenu)
+- 自定义 Xfce 菜单：[https://wiki.xfce.org/zh-cn/howto/customize-menu](https://wiki.xfce.org/zh-cn/howto/customize-menu)
+### 菜单插件
+```bash
+#xfce4-panel自带
+$ xfce4-popup-applicationsmenu -p #在鼠标当前位置弹出xfce4-panel自带菜单
+```
+```bash
+#xfce4-whiskermenu-plugin 插件：带搜索功能
+$ sudo apt-get install xfce4-whiskermenu-plugin #安装
+$ xfce4-popup-whiskermenu -p #在鼠标当前位置弹出whiskermenu自带菜单
+```
+### 配置文件
+```bash
+#Debian12 xfce4.18
+/etc/xdg/menus/xfce-applications.menu #菜单主配置文件，定义了菜单名称等信息
+
+/usr/share/desktop-directories/ #<Directory>下文件存放目录，定义了菜单图标、名称等信息
+```
 

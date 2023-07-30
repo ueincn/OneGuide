@@ -6,16 +6,26 @@ The Applications Menu panel plugin adds a menu to the panel that allows easy acc
 #Link
 - 官网文档：[https://docs.xfce.org/xfce/xfce4-panel/applicationsmenu](https://docs.xfce.org/xfce/xfce4-panel/applicationsmenu)
 - 自定义 Xfce 菜单：[https://wiki.xfce.org/zh-cn/howto/customize-menu](https://wiki.xfce.org/zh-cn/howto/customize-menu)
+## 菜单插件
+```bash
+#xfce4-panel自带
+$ xfce4-popup-applicationsmenu -p #在鼠标当前位置弹出xfce4-panel自带菜单
+```
+```bash
+#xfce4-whiskermenu-plugin 插件：带搜索功能
+$ sudo apt-get install xfce4-whiskermenu-plugin #安装
+$ xfce4-popup-whiskermenu -p #在鼠标当前位置弹出whiskermenu自带菜单
+```
 
-# 配置文件
+## 配置文件
 ```bash
 #Debian12 xfce4.18
 /etc/xdg/menus/xfce-applications.menu #菜单主配置文件，定义了菜单名称等信息
 
 /usr/share/desktop-directories/ #<Directory>下文件存放目录，定义了菜单图标、名称等信息
 ```
-# 创建子菜单
-## 整体步骤
+## 创建子菜单
+### 整体步骤
 - 创建一个新的子菜单, 添加一个 “Menu” 元素到 /etc/xdg/menus/xfce-applications.menu文件中和其他 xfdesktop 子菜单（比如“图像”，“多媒体”）相同的级别。
     - 在“Menu” 元素中添加一个 “Name” 元素：菜单名称
     - 再添加一个“Directory” 元素，它对关联子菜单和 desktop 文件，及一个相应的合适的图标
@@ -23,7 +33,7 @@ The Applications Menu panel plugin adds a menu to the panel that allows easy acc
 - 创建一个xxx.directory文件放到/usr/share/desktop-directories/目录中，定义了菜单图标、名称等信息。
 - 创建自定义应用xxx.desktop文件放到/usr/share/applications中，确保字段和xfce-applications.menu中Category的字段一致即可,然后在启动菜单中就可以看到了。
 
-## 实战示例
+### 实战示例
 > KVM虚拟机启动脚本
 
 1.添加一个 “Menu” 元素到 /etc/xdg/menus/xfce-applications.menu文件中
