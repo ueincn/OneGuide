@@ -105,6 +105,14 @@ $ gtk-update-icon-cache /usr/share/icons/hicolor
 $ sudo apt-get install pluma
 ``` 
 
+### Fcitx5 中文輸入法
+其实Debian 12 中文安装Xfce4桌面环境时默认已经安装Fcitx5
+官网：[https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn](https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn)
+```bash
+$ sudo apt install --install-recommends fcitx5 fcitx5-chinese-addons
+$ fcitx5-configtool #配置中文 - 拼音
+```
+
 ### wps
 ```bash
 $ wget https://wps-linux-personal.wpscdn.cn/wps/download/ep/Linux2019/11698/wps-office_11.1.0.11698_amd64.deb
@@ -115,6 +123,29 @@ $ sudo mv ttf-wps-fonts/* /usr/share/fonts/wps-fonts
 $ sudo chmod 644 /usr/share/fonts/wps-fonts/*
 $ sudo fc-cache -vfs
 $ rm -rf ttf-wps-fonts/
+```
+
+### Clash
+```bash
+$ wget https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.30/Clash.for.Windows-0.20.30-x64-linux.tar.gz
+$ wget https://cdn.jsdelivr.net/gh/Dreamacro/clash@master/docs/logo.png
+$ sudo mkdir -p /opt/Clash
+$ sudo tar -xvf Clash.for.Windows-0.20.30-x64-linux.tar.gz
+$ sudo cp -r Clash\ for\ Windows-0.20.30-x64-linux/* /opt/Clash/
+$ sudo cp logo.png /opt/Clash
+$ sudo chmod -R +x /opt/Clash
+
+#创建快捷方式
+sudo vim /usr/share/applications/clash.desktop
+    [Desktop Entry]
+    Name=Clash
+    Comment=A Windows/macOS/Linux GUI based on Clash and Electron.
+    Exec=/opt/Clash/cfw
+    Icon=/opt/Clash/logo.png
+    Type=Application
+    Categories=Development;
+    StartupNotify=true
+    NoDisplay=false
 ```
 ## KVM环境
 ### 1.系统虚拟化环境检测
@@ -175,4 +206,24 @@ $ sudo systemctl restart libvirtd.service #启动libvirtd
 $ sudo systemctl enable libvirtd.service #开机自启
 
 $ sudo systemctl status libvirtd.service #查看启动状态
+```
+
+## Docker环境
+### 1.Docker安装
+```bash
+$ sudo apt-get install docker.io docker-compose
+```
+### 2.Dcoker启动
+```bash
+$ sudo systemctl start docker.service
+$ sudo systemctl enable docker.service
+$ sudo systemctl start docker.socket
+$ sudo systemctl enable docker.socket
+```
+### 3.Docker关闭
+```bash
+$ sudo systemctl stop docker.socket
+$ sudo systemctl disable docker.socket
+$ sudo systemctl stop docker.service
+$ sudo systemctl disable docker.service
 ```
