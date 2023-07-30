@@ -4,3 +4,5 @@ Xfce 基于 GTK+ 2，类似 Gnome 2。Xfce 的一个首要目标之一是符合�
 
 Xfce 包括一系列组件，它们组合在一起，成为一个功能完整的桌面环境。这些组件各自打包，你可以根据个人喜好挑选适合自己的软件包。
 
+### Link
+- Debian Wiki: [https://wiki.debian.org/zh_CN/Xfce](https://wiki.debian.org/zh_CN/Xfce)
