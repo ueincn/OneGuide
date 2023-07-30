@@ -18,6 +18,7 @@ Xfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL�
 
 ---
 # xfce4-panel
+- 面板插件：[https://docs.xfce.org/panel-plugins](https://docs.xfce.org/panel-plugins)
 ## xfce4-panel - Applications Menu
 xfce4面板 - 应用程序菜单
 The Applications Menu panel plugin adds a menu to the panel that allows easy access to all installed applications, organised into categories.
