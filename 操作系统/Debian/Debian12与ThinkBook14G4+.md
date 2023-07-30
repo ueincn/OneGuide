@@ -93,7 +93,7 @@ StartupNotify=true
 Terminal=false
 Icon=pycharm
 Type=Application
-Categories=Network;WebBrowser;
+Categories=TextEditor;Development;IDE;
 EOF
 
 #更新图标缓存
