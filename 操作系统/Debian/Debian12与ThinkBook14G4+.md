@@ -147,6 +147,28 @@ sudo vim /usr/share/applications/clash.desktop
     StartupNotify=true
     NoDisplay=false
 ```
+
+### Wine
+```bash
+#64
+$ sudo apt-get install wine
+$ export WINEARCH=win64
+$ export WINEPREFIX=~/.wine64
+$ wincfg
+
+#32
+$ sudo apt upgrade && sudo apt update
+$ sudo dpkg --add-architecture i386
+$ sudo apt-get update
+$ sudo apt-get install wine32
+$ export WINEARCH=win32
+$ export WINEPREFIX=~/.wine32
+$ wincfg
+
+#安装程序
+$ wine xxx.exe
+
+```
 ## KVM环境
 ### 1.系统虚拟化环境检测
 ```bash
