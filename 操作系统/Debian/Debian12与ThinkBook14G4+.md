@@ -249,3 +249,14 @@ $ sudo systemctl disable docker.socket
 $ sudo systemctl stop docker.service
 $ sudo systemctl disable docker.service
 ```
+## VNC环境
+### VNC客户端
+#### tigervnc-viewer
+```bash
+#安装
+$ sudo apt-get install tigervnc-viewer
+
+#启动
+$ vncviewer
+```
+### VNC服务端
