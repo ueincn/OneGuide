@@ -44,9 +44,12 @@ $ sudo reboot
 ```bash
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
-- ### Vim
+
+- ### Gimp
 ```bash
-$ sudo apt-get install vim
+$ sudo apt-get install gimp
+#启动
+$ gimp
 ```
 - ### Git
 ```bash
@@ -101,12 +104,15 @@ $ gtk-update-icon-cache /usr/share/icons/hicolor
 ```
 ### 文本处理器
 ```bash
-#Pluma
+# Pluma
 $ sudo apt-get install pluma
+
+# Vim
+$ sudo apt-get install vim
 ``` 
 
 ### Fcitx5 中文輸入法
-其实Debian 12 中文安装Xfce4桌面环境时默认已经安装Fcitx5
+Debian 12 中文安装Xfce4桌面环境时默认已经安装Fcitx5
 官网：[https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn](https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn)
 ```bash
 $ sudo apt install --install-recommends fcitx5 fcitx5-chinese-addons
