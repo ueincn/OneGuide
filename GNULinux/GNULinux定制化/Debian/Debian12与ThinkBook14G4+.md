@@ -266,3 +266,32 @@ $ sudo apt-get install tigervnc-viewer
 $ vncviewer
 ```
 ### VNC服务端
+
+
+## 数据库MySQL环境
+```bash
+$ sudo apt-get install mariadb-server
+
+# dpkg -l | grep mariadb
+#ii  libdbd-mariadb-perl                   1.22-1+b1                            amd64        Perl5 database interface to the MariaDB/MySQL databases
+#ii  libmariadb3:amd64                     1:10.11.3-1                          amd64        MariaDB database client library
+#ii  mariadb-client                        1:10.11.3-1                          amd64        MariaDB database client binaries
+#ii  mariadb-client-core                   1:10.11.3-1                          amd64        MariaDB database core client binaries
+#ii  mariadb-common                        1:10.11.3-1                          all          MariaDB common configuration files
+#ii  mariadb-plugin-provider-bzip2         1:10.11.3-1                          amd64        BZip2 compression support in the server and storage engines
+#ii  mariadb-plugin-provider-lz4           1:10.11.3-1                          amd64        LZ4 compression support in the server and storage engines
+#ii  mariadb-plugin-provider-lzma          1:10.11.3-1                          amd64        LZMA compression support in the server and storage engines
+#ii  mariadb-plugin-provider-lzo           1:10.11.3-1                          amd64        LZO compression support in the server and storage engines
+#ii  mariadb-plugin-provider-snappy        1:10.11.3-1                          amd64        Snappy compression support in the server and storage engines
+#ii  mariadb-server                        1:10.11.3-1                          amd64        MariaDB database server binaries
+#ii  mariadb-server-core                   1:10.11.3-1                          amd64        MariaDB database core server files
+
+```
+
+## 微信
+```bash
+$ wget https://archive.ubuntukylin.com/ubuntukylin/pool/partner/weixin_2.1.4_amd64.deb
+$ sudo dpkg -i wget weixin_2.1.4_amd64.deb
+
+#
+```
