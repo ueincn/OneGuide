@@ -48,3 +48,6 @@ $ apk add git
 #Slitaz
 $ tazpkg get-install git
 ```
+
+## Windows
+官网下载安装即可：https://git-scm.com/download/win
