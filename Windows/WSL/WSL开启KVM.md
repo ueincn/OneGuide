@@ -21,5 +21,4 @@ KVM acceleration can be used
 ```bash
 $ cat /sys/module/kvm_intel/parameters/nested
 ```
-应报告“Y”
-4. 开启后就可以使用KVM了。
+应报告“Y”，开启后就可以使用KVM了。
