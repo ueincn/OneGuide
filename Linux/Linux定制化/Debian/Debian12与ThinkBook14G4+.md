@@ -143,15 +143,15 @@ $ sudo chmod -R +x /opt/Clash
 
 #创建快捷方式
 sudo vim /usr/share/applications/clash.desktop
-    [Desktop Entry]
-    Name=Clash
-    Comment=A Windows/macOS/Linux GUI based on Clash and Electron.
-    Exec=/opt/Clash/cfw
-    Icon=/opt/Clash/logo.png
-    Type=Application
-    Categories=Development;
-    StartupNotify=true
-    NoDisplay=false
+[Desktop Entry]
+Name=Clash
+Comment=A Windows/macOS/Linux GUI based on Clash and Electron.
+Exec=/opt/Clash/cfw
+Icon=/opt/Clash/logo.png
+Type=Application
+Categories=Development;
+StartupNotify=true
+NoDisplay=false
 ```
 
 ### Wine
