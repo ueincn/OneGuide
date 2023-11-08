@@ -35,3 +35,4 @@ rpm和yum命令报错：rpm: /lib64/libnssutil3.so: version `NSSUTIL_3.59‘ not
 记一次“Failed to initialize NSS library”问题修复： https://blog.51cto.com/u_10889267/5476717
 
 测试K8s
+整理
