@@ -33,3 +33,5 @@ yum/rpm error: Failed to initialize NSS library centos7：https://blog.whsir.com
 rpm和yum命令报错：rpm: /lib64/libnssutil3.so: version `NSSUTIL_3.59‘ not found：https://blog.csdn.net/Sara_cloud/article/details/122702757
 【系统救援】/lib64/libnssutil3.so: version `NSSUTIL_3.59‘ not found (required by /lib64/libnss3.so)：https://blog.csdn.net/avatar_2009/article/details/127389865
 记一次“Failed to initialize NSS library”问题修复： https://blog.51cto.com/u_10889267/5476717
+
+测试K8s
