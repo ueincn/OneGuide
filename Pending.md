@@ -38,3 +38,4 @@ rpm和yum命令报错：rpm: /lib64/libnssutil3.so: version `NSSUTIL_3.59‘ not
 整理
 
 Linux启动流程
+UEFI启动学习
