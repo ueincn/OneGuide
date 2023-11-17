@@ -47,3 +47,4 @@ U-Boot学习
 
 从最初的地方开始！
 HCIA-Datacom 学习！
+加油！
