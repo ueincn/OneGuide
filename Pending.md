@@ -54,3 +54,4 @@ HCIA-Datacom继续学习中...
 学习Docker和K8s
 Docker+1+2+3+4+5+6+7
 加油！+1+2+3
+系统化的学习Linux（找RHCE教程）
