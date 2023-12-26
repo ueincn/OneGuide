@@ -57,3 +57,4 @@ Docker+1+2+3+4+5+6+7
 系统化的学习Linux（找RHCE教程）
 整理自己！+1
 整理RHCE教材教程等
+学习：RHCSA+RHCE
