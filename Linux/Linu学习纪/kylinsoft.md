@@ -30,3 +30,10 @@ allow-guest=false
 
 $ sudo systemctl restart lightdm
 ```
+
+```bash
+$ sudo vim /usr/share/lightdm/lightdm.conf.d/95-ukui-greeter.conf 
+[Seat:*]
+session-setup-script=sleep 20    #登录界面输入密码后等待20s后显示桌面
+display-setup-script=sleep 20    #系统启动完成之后等待20s后显示登录界面
+```
