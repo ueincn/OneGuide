@@ -31,6 +31,8 @@ allow-guest=false
 $ sudo systemctl restart lightdm
 ```
 
+
+#### KylinDesktop：V10-SP1延迟登录
 ```bash
 $ sudo vim /usr/share/lightdm/lightdm.conf.d/95-ukui-greeter.conf 
 [Seat:*]
