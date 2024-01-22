@@ -37,3 +37,13 @@ $ sudo vim /usr/share/lightdm/lightdm.conf.d/95-ukui-greeter.conf
 session-setup-script=sleep 20    #登录界面输入密码后等待20s后显示桌面
 display-setup-script=sleep 20    #系统启动完成之后等待20s后显示登录界面
 ```
+
+
+#### KylinDesktop：V10-SP1隐藏单个用户
+```bash
+$ sudo cd /var/lib/AccountsService/users/
+$ sudo vim username
+
+[User]
+SystemAccount=false    #默认为false，如需隐藏改成true
+```
