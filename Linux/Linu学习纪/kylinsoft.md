@@ -49,3 +49,12 @@ $ sudo vim username
 [User]
 SystemAccount=false    #默认为false，如需隐藏改成true
 ```
+```bash
+#将用户添加到nopasswdlogin组，xxx为用户名
+$ sudo gpasswd -a xxxx nopasswdlogin
+
+#查看是否添加成功
+$ cat /etc/group grep nopass
+
+#注销重新登录即可免密登录
+```
