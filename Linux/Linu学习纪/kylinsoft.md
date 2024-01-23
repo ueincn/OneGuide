@@ -49,6 +49,9 @@ $ sudo vim username
 [User]
 SystemAccount=false    #默认为false，如需隐藏改成true
 ```
+
+
+KylinDesktop：V10-SP1免密登录
 ```bash
 #将用户添加到nopasswdlogin组，xxx为用户名
 $ sudo gpasswd -a xxxx nopasswdlogin
