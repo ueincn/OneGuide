@@ -61,3 +61,9 @@ $ cat /etc/group grep nopass
 
 #注销重新登录即可免密登录
 ```
+
+---
+#### KylinDesktop：KVM/QEMU安装
+```bash
+sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvirt-clients bridge-utils virt-manager
+```
