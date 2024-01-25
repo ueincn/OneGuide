@@ -67,3 +67,10 @@ $ cat /etc/group grep nopass
 ```bash
 sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvirt-clients bridge-utils virt-manager
 ```
+
+#### 安装软件
+- Neofetch
+> 在终端中显示 Linux 系统信息
+```bash
+sudo apt-get install neofetch
+```
