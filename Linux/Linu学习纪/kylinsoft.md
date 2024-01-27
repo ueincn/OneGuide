@@ -74,3 +74,45 @@ sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvi
 ```bash
 sudo apt-get install neofetch
 ```
+
+#### 安装Docker
+```bash
+#默认源安装的是Docker 20.10.7版本
+$ sudo apt-get install docker.io docker-compose
+$ sudo docker version
+kylin@kylin:~$ sudo docker version
+Client:
+ Version:           20.10.7
+ API version:       1.41
+ Go version:        go1.13.8
+ Git commit:        20.10.7-0kylin5~20.04.2
+ Built:             Tue Nov  9 01:46:25 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server:
+ Engine:
+  Version:          20.10.7
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.8
+  Git commit:       20.10.7-0kylin5~20.04.2
+  Built:            Tue Nov  9 01:25:31 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.5.9-0kylin1~20.04.4
+  GitCommit:
+ runc:
+  Version:          1.0.0~rc95-0kylin1~20.04.2
+  GitCommit:
+ docker-init:
+  Version:          0.19.0
+  GitCommit
+
+-----------------------------------------------------
+#卸载
+$ systemctl stop docker && systemctl disable docker
+$ sudo apt-get remove docker.io docker-compose
+$ sudo rm -rf /etc/docker
+```
