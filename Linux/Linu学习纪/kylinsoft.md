@@ -75,6 +75,7 @@ sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvi
 sudo apt-get install neofetch
 ```
 - Typora
+> 优秀的Markdown文档编辑器
 
 #### 安装Docker
 ```bash
