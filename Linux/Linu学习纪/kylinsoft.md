@@ -76,6 +76,9 @@ sudo apt-get install neofetch
 ```
 - Typora
 > 优秀的Markdown文档编辑器
+```bash
+sudo apt-get install typora
+```
 
 #### 安装Docker
 ```bash
