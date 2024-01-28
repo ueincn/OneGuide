@@ -74,6 +74,7 @@ sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvi
 ```bash
 sudo apt-get install neofetch
 ```
+- Typora
 
 #### 安装Docker
 ```bash
@@ -116,3 +117,4 @@ $ systemctl stop docker && systemctl disable docker
 $ sudo apt-get remove docker.io docker-compose
 $ sudo rm -rf /etc/docker
 ```
+
