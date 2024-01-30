@@ -66,6 +66,14 @@ $ cat /etc/group grep nopass
 #### KylinDesktop：KVM/QEMU安装
 ```bash
 sudo apt-get install qemu-kvm qemu-utils qemu-system libvirt-daemon-system libvirt-clients bridge-utils virt-manager
+
+# qemu-kvm
+# qemu-system
+# qemu-utils：qemu-img、qemu-io等
+# libvirt-clients：virsh
+# libvirt-daemon-system：libvirtd
+# bridge-utils：网桥工具
+# virt-manager：KVM GUI程序
 ```
 
 #### 安装软件
