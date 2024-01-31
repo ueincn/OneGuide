@@ -88,6 +88,12 @@ sudo apt-get install neofetch
 sudo apt-get install typora
 ```
 
+#### 谷歌浏览器
+- 方法一、系统自带源安装
+```bash
+sudo apt-get install google-chrome-stable
+```
+
 #### 安装Docker
 ```bash
 #默认源安装的是Docker 20.10.7版本
@@ -129,4 +135,8 @@ $ systemctl stop docker && systemctl disable docker
 $ sudo apt-get remove docker.io docker-compose
 $ sudo rm -rf /etc/docker
 ```
+
+
+
+
 
