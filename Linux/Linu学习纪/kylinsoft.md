@@ -136,6 +136,10 @@ $ sudo apt-get remove docker.io docker-compose
 $ sudo rm -rf /etc/docker
 ```
 
+#### 开发编译环境
+```bash
+$ sudo apt-get install build-essential linux-headers-$(uname -r)
+```
 
 
 
