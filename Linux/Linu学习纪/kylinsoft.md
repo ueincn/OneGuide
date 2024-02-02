@@ -93,6 +93,15 @@ sudo apt-get install typora
 ```bash
 sudo apt-get install google-chrome-stable
 ```
+- 方法二、官网下载最新版本安装
+1. 先前往官网获取最新的软件包地址官网地址：https://www.google.cn/chrome/index.html
+2. 下载并安装
+```bash
+cd ~
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+chmod 777 google-chrome-stable_current_amd64.deb 
+sudo dpkg -i google-chrome-stable_current_amd64.debcd glx
+```
 
 #### 安装Docker
 ```bash
