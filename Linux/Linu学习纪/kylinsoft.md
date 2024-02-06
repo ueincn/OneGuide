@@ -108,6 +108,12 @@ sudo dpkg -i google-chrome-stable_current_amd64.debcd glx
 $ sudo apt-get install git
 ```
 
+##### PyCharm
+```bash
+sudo apt-get install pycharm-community
+```
+
+
 #### 安装Docker
 ```bash
 #默认源安装的是Docker 20.10.7版本
