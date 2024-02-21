@@ -161,6 +161,10 @@ $ sudo rm -rf /etc/docker
 $ sudo apt-get install build-essential linux-headers-$(uname -r)
 ```
 
+#### PyCharm
+```bash
+$ sudo apt-get install pycharm-community
+```
 
 
 
